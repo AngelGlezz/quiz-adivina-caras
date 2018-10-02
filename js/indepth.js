@@ -62,11 +62,11 @@ $("#indepth_boton_empezar").on("click",function(){
         },
         {
           "respuesta": "b",
-          "tipo": "true"
+          "tipo": "false"
         },
         {
           "respuesta": "c",
-          "tipo": "false"
+          "tipo": "true"
         }
       ]
     },
@@ -75,24 +75,7 @@ $("#indepth_boton_empezar").on("click",function(){
       "respuestas": [
         {
           "respuesta": "a",
-          "tipo": "false"
-        },
-        {
-          "respuesta": "b",
           "tipo": "true"
-        },
-        {
-          "respuesta": "c",
-          "tipo": "false"
-        }
-      ]
-    },
-    {
-      "pregunta": "Adivina al jugador",
-      "respuestas": [
-        {
-          "respuesta": "a",
-          "tipo": "false"
         },
         {
           "respuesta": "b",
@@ -100,7 +83,7 @@ $("#indepth_boton_empezar").on("click",function(){
         },
         {
           "respuesta": "c",
-          "tipo": "true"
+          "tipo": "false"
         }
       ]
     },
@@ -152,6 +135,23 @@ $("#indepth_boton_empezar").on("click",function(){
         {
           "respuesta": "c",
           "tipo": "false"
+        }
+      ]
+    },
+    {
+      "pregunta": "Adivina al jugador",
+      "respuestas": [
+        {
+          "respuesta": "a",
+          "tipo": "false"
+        },
+        {
+          "respuesta": "b",
+          "tipo": "false"
+        },
+        {
+          "respuesta": "c",
+          "tipo": "true"
         }
       ]
     }
@@ -274,24 +274,24 @@ function finish_test(){
     aficionado="";
     msg="";
     
-    if(aciertos<=4){
-      msg="Claramente no sabes ni lo que es un balón… mejor dedícate al box, al póker o qué sé yo";
+    if(aciertos<=3){
+      msg="¡Nooooooooooo! ¡Nooooooooooo! ¡Corre antes de que el Piojo diga que fuiste tú el culpable de todo!";
       totalfb = "mal";
       $("#indepth_resultados").css({
       "background-image": "url("+urlIndepth+"images/resultados-1.jpg)"
     });
     }
 
-    if(aciertos>=5 && aciertos<=7){
-      msg="Mñeh, pudiste salir mejor. Ni muy muy, ni tan tan. Échale más ganitas. Sí se puede.";
+    if(aciertos>=4 && aciertos<=5){
+      msg="Pues mira, peor es nada. Al menos Herrera no tendrá pretexto para querer correrte o echarte la culpa";
       totalfb = "maso";
       $("#indepth_resultados").css({
       "background-image": "url("+urlIndepth+"images/resultados-2.jpg)"
     });
     }
 
-    if(aciertos>=8){
-      msg="¡Eres un D10S! ¡El balón y tú son uno mismo!";
+    if(aciertos>=6){
+      msg="¡HÉROE! ¿Gudiño qué? ¡Tú eres el mero mero! ¡Vámonos al Ángel!";
       totalfb = "bien";
       $("#indepth_resultados").css({
       "background-image": "url("+urlIndepth+"images/resultados-3.jpg)"
@@ -308,12 +308,12 @@ function finish_test(){
 
     $("#indepth_twittear").click(function(){
       var text = "";
-    if (aciertos <= 4) {
-      text = encodeURIComponent("Claramente no sabes ni lo que es un balón… mejor dedícate al box, al póker o qué sé yo");
-    } else if (aciertos >= 5 && aciertos <= 7) {
-      text = encodeURIComponent("Mñeh, pudiste salir mejor. Ni muy muy, ni tan tan. Échale más ganitas. Sí se puede.");
-    } else if (aciertos >= 8) {
-      text = encodeURIComponent("¡Eres un D10S! ¡El balón y tú son uno mismo!");
+    if (aciertos <= 3) {
+      text = encodeURIComponent("¡Nooooooooooo! ¡Nooooooooooo! ¡Corre antes de que el Piojo diga que fuiste tú el culpable de todo!");
+    } else if (aciertos >= 4 && aciertos <= 5) {
+      text = encodeURIComponent("Pues mira, peor es nada. Al menos Herrera no tendrá pretexto para querer correrte o echarte la culpa");
+    } else if (aciertos >= 6) {
+      text = encodeURIComponent("¡HÉROE! ¿Gudiño qué? ¡Tú eres el mero mero! ¡Vámonos al Ángel!");
     }
     
     var url = encodeURIComponent("http://juanfutbol.com/indepth/adivina-juan-caras");

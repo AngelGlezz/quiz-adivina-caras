@@ -2,17 +2,17 @@
 	$metas = array(
 		"mal" => array(
 			"title" => "Adivina Juan",
-			"description" => "Claramente no sabes ni lo que es un balón… mejor dedícate al box, al póker o qué sé yo",
+			"description" => "¡Nooooooooooo! ¡Nooooooooooo! ¡Corre antes de que el Piojo diga que fuiste tú el culpable de todo!",
 			"image" => "images/resultados-1.jpg" 
 		),
 		"maso" => array(
 			"title" => "Adivina Juan",
-			"description" => "Mñeh, pudiste salir mejor. Ni muy muy, ni tan tan. Échale más ganitas. Sí se puede.",
+			"description" => "Pues mira, peor es nada. Al menos Herrera no tendrá pretexto para querer correrte o echarte la culpa",
 			"image" => "images/resultados-2.jpg" 
 		),
 		"bien" => array(
 			"title" => "Adivina Juan",
-			"description" => "¡Eres un D10S! ¡El balón y tú son uno mismo!",
+			"description" => "¡HÉROE! ¿Gudiño qué? ¡Tú eres el mero mero! ¡Vámonos al Ángel!",
 			"image" => "images/resultados-3.jpg" 
 		)
 	);
