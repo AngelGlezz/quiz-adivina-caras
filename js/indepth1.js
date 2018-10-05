@@ -250,7 +250,7 @@ function finish_test(){
 
   ventana_alto = window.innerHeight ? window.innerHeight : $(window).height();;
   var ventana_ancho = $(window).width();
-  $(".inner").show();
+  $("#indepth_resultados").show();
 
   $("#indepth_resultados").css({
       "visibility": "visible",
